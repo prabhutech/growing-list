@@ -1,0 +1,51 @@
+body {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+	margin:20px;
+}
+
+div#controls {
+	padding:20px;
+}
+
+#controls input {
+    width: 30px;
+}
+
+.vlist_ul {
+    width: 100px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.vlist_li {
+    list-style: none;
+    width: 100px;
+    background-color: #F6F6F6;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: 1px solid #CCCCCC;
+    color: #0000a0;
+}
+
+a {
+    background: #ccc;
+    cursor: pointer;
+    border-top: solid 2px #eaeaea;
+    border-left: solid 2px #eaeaea;
+    border-bottom: solid 2px #777;
+    border-right: solid 2px #777;
+    padding: 3px 3px;
+}
+
+a.down {
+    background: #bbb;
+    border-top: solid 2px #777;
+    border-left: solid 2px #777;
+    border-bottom: solid 2px #eaeaea;
+    border-right: solid 2px #eaeaea;
+}

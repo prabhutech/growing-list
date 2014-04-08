@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta name="generator" content="HTML Tidy, see www.w3.org">
+        <meta http-equiv="Content-Type" content= "text/html; charset=utf-8">
+        <title>Growing List</title>
+        <link rel="stylesheet" type="text/css" href= "css/style.css">
+        <script type="text/javascript" src="js/jquery-1.4.2.min.js">
+        </script>
+        <script type="text/javascript" src="js/vlist.js">
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('a#toggleButton').click(function(){
+                    if ($(this).hasClass('')) {
+                        VList.start($('#minColumnHeightTxt').val(), $('#maxColsTxt').val(), 'growingListContainer');
+                        $(this).html('PAUSE');
+                    }
+                    else {
+                        VList.pauseTimer();
+                        $(this).html('PLAY');
+                    }
+                    $(this).toggleClass("down");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="controls">
+            <label for="maxColsTxt">maxCols: </label><input type="text" id="maxColsTxt" value="">
+            <label for="minColumnHeightTxt">minColHeight: </label><input type="text" id="minColumnHeightTxt" value="">			
+            <a id="toggleButton" title="toggleButton">PLAY</a>
+        </div>
+        <div id="growingListContainer">
+        </div>
+    </body>
+</html>
